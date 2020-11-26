@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="icon" href="assets/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <title>Ian Fleshman-Cooper's Portfolio</title>
 </head>
 <body>
+    <header>
+        <section class="name">
+            <h1>Ian Fleshman-Cooper</h1>
+        </section> 
+        <nav>
+        <!-- Place the Nav within a hamburger menu? open it w/ an animation?     -->
+            <ul class="navlinks">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+                <li><a href="assets/resume.docx" download="assets/resume">Resume</a></li>
+            </ul>
+        </nav>
+<!-- Use Info -->
+        <main>
+            <header>
+                <div>
+                    <img class="pic" src="assets/20200710_185432484_iOS.jpg" alt="Profile Picture">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="navlinks">
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contactme">Contact Me</a></li>
+                        <li><a href="assets/resume.docx" download="assets/resume">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="content" id="aboutme">
+                <section class="left">
+                    <h2>About Me</h2>
+                </section>
+                <aside class="right">
+                    <p>I am a recent graduate from Northwest University earning a degree in Mathematics and Information Technology. I am currently enrolled at the University of Washington taking part in their Full-stack Coding Bootcamp Program. Some of the skills and content we are covering include JavaScript, HTML, CSS, jQuery, React JS, MongoDB, Node.JS as well as going in depth with Algorithms, Efficiency, and Data Structures.</p>
+                    <p>I also currently work fulltime at Northwest University as an Academic Advisor for their online program referred to as NPP. This position has granted me much experience in developing systems to help manage students in their success to earn their degree. This job has also given experience in managing multiple tasks, act as a consultant for students, and work with a team to find solutions for more fluency in our systems.</p> 
+                    <p>Overall, I am an easygoing individual with a drive to learn and achieve personal, as well as team goals. </p>
+                </aside> 
+            </section>
+
+            <section class="content" id="work">
+                <section class="left">
+                    <h2>Work</h2>
+                </section>
+                <aside class="right">
+                    <a href="#" class="boxone" id="surfbox">
+                        <div class="worksub">
+                            <h3>Surf Report</h3>
+                            <p>MERN Stack</p>
+                        </div>
+                    </a>
+                    <a href="#" class="boxtwo" id="ledbox">
+                        <div class="worksub">
+                            <h3>LED Wall</h3>
+                            <p>Node/IoT</p>
+                        </div>
+                    </a>
+                    <a href="#" class="boxtwo" id="calcbox">
+                        <div class="worksub">
+                            <h3>Calculator</h3>
+                            <p>React/JavaScript/CSS</p>
+                        </div>
+                    </a>
+                    <a href="#" class="boxtwo" id="pastelbox">
+                        <div class="worksub">
+                            <h3>Pastel Puzzles</h3>
+                            <p>MERN Stack</p>
+                        </div>
+                    </a>
+                    <a href="#" class="boxtwo" id="runbox">
+                        <div class="worksub">
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                </aside> 
+            </section>
+        </main>
+<!-- use footer -->
+        <footer class="content" id="contactme">
+            <section class="left">
+                <h2>Contact Me</h2>
+            </section>
+            <section class="right">
+                <ul>
+                    <li><a href= "mailto:ian.fleshmancooper@gmail.com">E-Mail</a></li>
+                    <li><a href= "https://github.com/Ianaac27">GitHub</a></li>
+                    <li><a href= "https://www.linkedin.com/in/ian-fleshman-cooper-934995163/">LinkedIn</a></li>
+                    <li><a href= "https://www.facebook.com/ian.cooper.12177/">Facebook</a></li>
+                </ul>
+            </section> 
+        </footer>    
+    </header> 
     
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
