@@ -22,16 +22,6 @@
   
 }
 
-@media (min-width: 800p) {
-    :root {
-        --fs-h1: 4.5;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-
-}
-
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -41,34 +31,204 @@ body {
     line-height: 1.6;
 }
 
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
     display: block;
     max-width: 100%;
 }
 
 .portfolio-img { 
-    box-shadow: 15px 5px 30px var(--clr-dark);    
+    box-shadow: 15px 5px 30px var(--clr-dark);
+    width: 250px;
+    z-index: 2;    
 }
 
 h1, h2, h3 {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
-k
-.section-title strong {
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+#header-phrase {
+    font-size: var(--fs-h2);
+}
+
+section {
+    padding: 5em 2em;
+}
+.section-title {
     margin-bottom: .25em;
+    font-size: var(--fs-h1);
 }
 
 .para-subtitle {
     margin: 0;
-    font-size: var(--fs-h3) 
+    font-size: var(--fs-h3); 
 }
 
 .para-subtitle-dark {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+.nav { display: none; }
+
+#intro {
+    position: relative;
+}
+
+.intro-info {
+    padding-left: 1.5em;
+    padding-bottom: 6em;
+}
+
+#para-subtitle-intro {
+    position: absolute;
+    width: 22.4em;
+    bottom: 3.9em;
+    left: 4em;
+    height: 2em;
+    text-align: right;
+    font-size: 35px;
+}
+
+/* Media Screens */
+@media screen and (max-width:1200px){
+    .intro-info {
+        padding-left: 1.5em;
+        padding-bottom: 6em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 22.8em;
+        bottom: 3.9em;
+        left: 1em;
+        height: 2em;
+        text-align: right;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 2em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 26.6em;
+        bottom: 7.7em;
+        left: .25em;
+        height: 2em;
+        text-align: right;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:767.5px){
+    #intro {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-info {
+        padding-bottom: 3em;
+    }
+
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 20em;
+        bottom: 22.7em;
+        left: 4.75em;
+        height: 2em;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:560px){
+    #para-subtitle-intro {
+        position: absolute;
+        width: 18em;
+        bottom: 22.7em;
+        left: 4.75em;
+        height: 2em;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:520px){
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 2em;
+        text-align: center;
+        margin-right: .5em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 17em;
+        bottom: 22.7em;
+        left: 4.3em;
+        height: 2em;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:376px){
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 1.4em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 17em;
+        bottom: 24em;
+        left: 1.5em;
+        height: 2em;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:361px){
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 1.3em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 17em;
+        bottom: 24em;
+        left: 1.25em;
+        height: 2em;
+        text-align: center;
+        font-size: 17px;
+    }
 }
