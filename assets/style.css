@@ -33,6 +33,10 @@ body {
     line-height: 1.6;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Intro section */
 #intro {
     display: flex;
@@ -60,13 +64,9 @@ h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
 
-#header-phrase {
-    font-size: var(--fs-h2);
-}
+#header-phrase { font-size: var(--fs-h2); }
 
-section {
-    padding: 5em 2em;
-}
+section { padding: 5em 2em; }
 
 .section-title {
     margin-bottom: .25em;
@@ -88,11 +88,9 @@ section {
     padding: .25em 1em;
 }
 
-.nav { display: none; }
+/* .nav { display: none; } */
 
-#intro {
-    position: relative;
-}
+#intro { position: relative; }
 
 .intro-info {
     padding-left: 1.5em;
@@ -103,19 +101,26 @@ section {
     position: absolute;
     width: 22.4em;
     bottom: 3.9em;
-    left: 4em;
+    left: 4.4em;
     height: 2em;
     text-align: right;
     font-size: 35px;
 }
 
 /* About me section */
-.para-subtitle-about {
-    margin: 12px 18% 4px 13% 
+#aboutMe {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+#about-me-section { padding: 2em 5em; }
+
+.para-about {
+    margin: 12px 10% 4px 8%; 
 }
 
 #about-me-sub {
-    margin: 0px 47% 0 0%;
+    margin: 0px 40% 0 0%;
     height: 2.5em;
     text-align: center;
     padding-top: 8px;
@@ -142,7 +147,28 @@ section {
     width: 100%;
 }
 
+/* Footer */
 
+#contactMe {
+    background-color: var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-title {
+    color: var(--clr-light);
+    font-size: 1.7em;
+    font-family: var(--ff-secondary);
+    margin: 25px 0 25px 0;
+}
+
+.icon-item {
+    font-size: 2em;
+    color: var(--clr-light);
+    margin: 0px 30px 25px;
+}
 
 /* Media Screens */
 @media screen and (max-width:1199px){
