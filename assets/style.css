@@ -14,6 +14,8 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-accent-two: #040d27;
+    --clr-silver: #807f7f;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -31,6 +33,7 @@ body {
     line-height: 1.6;
 }
 
+/* Intro section */
 #intro {
     display: flex;
     justify-content: center;
@@ -64,19 +67,23 @@ h3 { font-size: var(--fs-h3); }
 section {
     padding: 5em 2em;
 }
+
 .section-title {
     margin-bottom: .25em;
     font-size: var(--fs-h1);
 }
+
+/* #name {color: var(--clr-silver)}; */
 
 .para-subtitle {
     margin: 0;
     font-size: var(--fs-h3); 
 }
 
-.para-subtitle-dark {
+.para-subtitle-accent {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    color: var(--clr-light);
     margin-bottom: 1em;
     padding: .25em 1em;
 }
@@ -102,8 +109,43 @@ section {
     font-size: 35px;
 }
 
+/* About me section */
+.para-subtitle-about {
+    margin: 12px 18% 4px 13% 
+}
+
+#about-me-sub {
+    margin: 0px 47% 0 0%;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.5em;
+}
+
+/* Works section */
+#work-title, #work-sub {text-align: center;}
+
+.work-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-item {
+    height: 16em;
+    width: 24em;
+    margin: 0 5px 5px 0;
+}
+
+.work-img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 /* Media Screens */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199px){
     .intro-info {
         padding-left: 1.5em;
         padding-bottom: 6em;
@@ -120,7 +162,7 @@ section {
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
     .section-title {
         margin-bottom: .25em;
         font-size: 2em;
@@ -164,7 +206,7 @@ section {
     }
 }
 
-@media screen and (max-width:560px){
+@media screen and (max-width:560.5px){
     #para-subtitle-intro {
         position: absolute;
         width: 18em;
@@ -176,7 +218,7 @@ section {
     }
 }
 
-@media screen and (max-width:520px){
+@media screen and (max-width:520.5px){
     .section-title {
         margin-bottom: .25em;
         font-size: 2em;
