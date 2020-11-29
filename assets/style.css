@@ -208,6 +208,51 @@ section { padding: 5em 2em; }
     font-size: 1.5em;
 }
 
+/* Project pages */
+#project-one {
+    background-color: var(--clr-dark);
+    background-image: url(oliver-pecker-HONJP8DyiSM-unsplash.jpg);
+    color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
+}
+
+#project-two {
+    background-color: var(--clr-dark);
+    background-image: url(omid-armin-AGRtDoZlpYw-unsplash.jpg);
+    color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
+}
+
+#project-three {
+    background-color: var(--clr-dark);
+    background-image: url(xps-6uneKLGrJPs-unsplash.jpg);
+    color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
+}
+
+#project-four {
+    background-color: var(--clr-dark);
+    background-image: url(xps-uWFFw7leQNI-unsplash.jpg);
+    color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
+}
+
+.para-project {
+    margin: 12px 10% 4px 8%; 
+}
+
 /* Works section */
 #work-title, #work-sub {text-align: center;}
 
