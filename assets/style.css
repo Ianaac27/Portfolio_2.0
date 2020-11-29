@@ -13,9 +13,9 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #1bb6e6;
     --clr-accent-two: #040d27;
-    --clr-silver: #807f7f;
+    --clr-silver: #bdbcbc;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -60,7 +60,9 @@ h1, h2, h3 {
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1); }
+h1 { 
+    font-size: var(--fs-h1);
+ }
 h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
 
@@ -72,8 +74,6 @@ section { padding: 5em 2em; }
     margin-bottom: .25em;
     font-size: var(--fs-h1);
 }
-
-/* #name {color: var(--clr-silver)}; */
 
 .para-subtitle {
     margin: 0;
@@ -87,8 +87,6 @@ section { padding: 5em 2em; }
     margin-bottom: 1em;
     padding: .25em 1em;
 }
-
-/* .nav { display: none; } */
 
 #intro { position: relative; }
 
@@ -110,9 +108,15 @@ section { padding: 5em 2em; }
 /* About me section */
 #aboutMe {
     background-color: var(--clr-dark);
+    background-image: url(dillon-shook-mY3_bvR74fI-unsplash3.jpg);
     color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
 }
 
+#about-me-title {color: var(--clr-silver);}
 #about-me-section { padding: 2em 5em; }
 
 .para-about {
@@ -120,7 +124,7 @@ section { padding: 5em 2em; }
 }
 
 #about-me-sub {
-    margin: 0px 40% 0 0%;
+    margin: 0px 16em 1em 0;
     height: 2.5em;
     text-align: center;
     padding-top: 8px;
@@ -129,6 +133,10 @@ section { padding: 5em 2em; }
 
 /* Works section */
 #work-title, #work-sub {text-align: center;}
+
+#work-title {margin-bottom: .15em;}
+
+#work-sub {margin-bottom: 1.5em;}
 
 .work-row {
     display: flex;
@@ -166,8 +174,12 @@ section { padding: 5em 2em; }
 
 .icon-item {
     font-size: 2em;
-    color: var(--clr-light);
+    color: var(--clr-silver);
     margin: 0px 30px 25px;
+}
+
+.icon-item:hover {
+    color: var(--clr-dark);
 }
 
 /* Media Screens */
