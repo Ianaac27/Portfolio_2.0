@@ -11,3 +11,7 @@ navLinks.forEach(response => {
     document.body.classList.remove('nav-open');
 })
 })
+
+// Current date
+const currentMoment = moment();
+var todayDate = $("#today-date").text(currentMoment.format("dddd, MMM Do YYYY"));
