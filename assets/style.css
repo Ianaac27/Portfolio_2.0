@@ -185,7 +185,7 @@ section { padding: 5em 2em; }
 /* About me section */
 #aboutMe {
     background-color: var(--clr-dark);
-    background-image: url(dillon-shook-mY3_bvR74fI-unsplash3.jpg);
+    background-image: url(background.jpg);
     color: var(--clr-light);
     background-size: cover;
     background-blend-mode: multiply;
@@ -209,49 +209,49 @@ section { padding: 5em 2em; }
 }
 
 /* Project pages */
-#project-one {
+.project-main {
+    display: flex;
+    margin-top: 3em;
+}
+.project-left {
     background-color: var(--clr-dark);
-    background-image: url(oliver-pecker-HONJP8DyiSM-unsplash.jpg);
     color: var(--clr-light);
-    background-size: cover;
-    background-blend-mode: multiply;
-    width: 100%;
-    height:100%;
+    width: 60%;
+    padding-left: 2em;
+    padding-top: 3em;
+    margin-top: 1em;
 }
 
-#project-two {
-    background-color: var(--clr-dark);
-    background-image: url(omid-armin-AGRtDoZlpYw-unsplash.jpg);
-    color: var(--clr-light);
-    background-size: cover;
-    background-blend-mode: multiply;
-    width: 100%;
-    height:100%;
-}
+#project-title {color: var(--clr-silver);}
 
-#project-three {
-    background-color: var(--clr-dark);
-    background-image: url(xps-6uneKLGrJPs-unsplash.jpg);
-    color: var(--clr-light);
-    background-size: cover;
-    background-blend-mode: multiply;
-    width: 100%;
-    height:100%;
-}
-
-#project-four {
-    background-color: var(--clr-dark);
-    background-image: url(xps-uWFFw7leQNI-unsplash.jpg);
-    color: var(--clr-light);
-    background-size: cover;
-    background-blend-mode: multiply;
-    width: 100%;
-    height:100%;
+#project-sub {
+    margin: 0px 16em 1em 0;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.5em;
 }
 
 .para-project {
-    margin: 12px 10% 4px 8%; 
+    margin: 12px 12% 4px 0%; 
 }
+
+.project-right {
+    background: var(--clr-light);
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#project-img {
+    box-shadow: 15px 5px 30px var(--clr-dark);
+    width: 38em;
+    z-index: 2;
+    margin-top: -4em;
+}
+
+/* #project-url {
+
+} */
 
 /* Works section */
 #work-title, #work-sub {text-align: center;}
