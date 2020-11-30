@@ -37,7 +37,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* ============================================================ Header ==================================================== */
 header {
     display: flex;
     flex-direction: row;
@@ -116,7 +116,7 @@ header {
     margin-top: 1.25em;
 }
 
-/* Intro section */
+/* =================================================== Intro section ============================================================ */
 #intro {
     display: flex;
     justify-content: center;
@@ -182,7 +182,7 @@ section { padding: 5em 2em; }
     font-size: 35px;
 }
 
-/* About me section */
+/* ================================================== About me section ================================================================= */
 #aboutMe {
     background-color: var(--clr-dark);
     background-image: url(background.jpg);
@@ -208,7 +208,7 @@ section { padding: 5em 2em; }
     font-size: 1.5em;
 }
 
-/* Project pages */
+/* =================================================== Project pages ============================================================= */
 .project-main {
     display: flex;
     margin-top: 3em;
@@ -234,7 +234,7 @@ section { padding: 5em 2em; }
 }
 
 .para-project {
-    margin: 12px 12% 4px 0%; 
+    margin: 12px 9% 4px 0%;
 }
 
 .project-right {
@@ -284,7 +284,7 @@ font-size: var(--fs-h2);
     color: var(--clr-accent);
 }
 
-/* Works section */
+/* ==================================================== Works section ================================================== */
 #work-title, #work-sub {text-align: center;}
 
 #work-title {margin-bottom: .15em;}
@@ -317,7 +317,7 @@ font-size: var(--fs-h2);
     opacity: .75;
 }
 
-/* Footer */
+/* ======================================================== Footer ================================================== */
 #contactMe {
     background-color: var(--clr-accent);
     display: flex;
@@ -345,7 +345,39 @@ font-size: var(--fs-h2);
     text-decoration: none;
 }
 
-/* Media Screens */
+/* ================================================== Media Screens ================================================================= */
+
+@media screen and (max-width:1400px){
+    .project-links {
+        padding-top: 2.3em;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .project-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 3.6em;
+    }
+
+    .project-url {
+        font-style: var(--ff-primary);
+        font-size: var(--fs-h2);
+        margin-top: 10px;
+    }
+
+    #contactMe {
+        width: 105%;
+    }
+
+    .project-item {
+        width: 29em;
+        height: 18.5em;
+    }
+}
+
 @media screen and (max-width:1199px){
     .intro-info {
         padding-left: 1.5em;
@@ -367,9 +399,54 @@ font-size: var(--fs-h2);
     }
 }
 
+@media screen and (max-width:1070px){
+
+    .project-main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+     .project-left {
+        width: 100%;
+    }
+
+    .project-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 7em;
+    }
+
+    .project-url {
+        font-style: var(--ff-primary);
+        font-size: var(--fs-h2);
+        margin-top: 20px;
+    }
+
+    #contactMe {
+        width: 105%;
+    }
+
+    .project-right {
+        padding-top: 10em;
+    }
+
+    .project-item {
+    width: 54em;
+    height: 36.5em;
+    }
+}
+
 @media screen and (max-width:1017px){
     #about-me-sub {
         font-size: 1.25em;
+    }
+
+    #project-sub {
+        margin: 0px 11em 1em 0;
     }
 }
 
@@ -392,11 +469,47 @@ font-size: var(--fs-h2);
     #about-me-section {
         padding: 2em 0;
     }
+
+    .project-item {
+        width: 22em;
+        height: 14.5em;
+    }
+
+    .project-url {
+        font-style: var(--ff-primary);
+        font-size: var(--fs-h2);
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width:790px){
     #about-me-sub {
         font-size: 1em;
+    }
+
+    .project-item {
+        width: 35em;
+        height: 23.5em;
+    }
+
+    .project-left {
+        width: 100%;
+    }
+
+    #project-title {
+        text-align: center;
+    }
+
+    #project-sub {
+        margin: 0px 0em 0em 0em;
+    }
+
+    .para-project {
+        margin: 12px 1% 4px 1%;
+    }
+
+    .project-links {
+        padding-top: 1em;
     }
 }
 
@@ -465,6 +578,10 @@ font-size: var(--fs-h2);
     #para-subtitle-intro {
         left: 5.4em;
     }
+    .project-item {
+        width: 29em;
+        height: 19.5em;
+    }
 }
 
 @media screen and (max-width:545px){
@@ -504,6 +621,10 @@ font-size: var(--fs-h2);
     #para-subtitle-intro {
         left: 3.6em;
     }
+    .project-item {
+        width: 25em;
+        height: 16.5em;
+    }
 }
 
 @media screen and (max-width:420px){
@@ -513,6 +634,10 @@ font-size: var(--fs-h2);
 
     .para-about {
         margin: 12px 3% 4px 3%;
+    }
+
+    .project-right {
+        padding-top: 6em;
     }
 }
 
@@ -525,6 +650,10 @@ font-size: var(--fs-h2);
         height: 2em;
         text-align: center;
         font-size: 17px;
+    }
+    .project-item {
+        width: 21em;
+        height: 14.5em;
     }
 } 
 
@@ -554,6 +683,10 @@ font-size: var(--fs-h2);
 
     section {
         padding: 2em 2em;
+    }
+
+    .project-right {
+        padding-top: 6em;
     }
 }  
 
@@ -600,6 +733,11 @@ font-size: var(--fs-h2);
 
     .para-about {
         margin: 12px -3% 4px -1%;
+    }
+
+    .project-item {
+        width: 16em;
+        height: 11.5em;
     }
 }
 
