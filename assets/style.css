@@ -355,11 +355,21 @@ font-size: var(--fs-h2);
     #para-subtitle-intro {
         position: absolute;
         width: 22.8em;
-        bottom: 3.9em;
-        left: 1em;
+        bottom: 3.3em;
+        left: 1.5em;
         height: 2em;
         text-align: right;
         font-size: 35px;
+    }
+
+    #about-me-section {
+        padding: 2em 3em;
+    }
+}
+
+@media screen and (max-width:1017px){
+    #about-me-sub {
+        font-size: 1.25em;
     }
 }
 
@@ -372,11 +382,21 @@ font-size: var(--fs-h2);
     #para-subtitle-intro {
         position: absolute;
         width: 26.6em;
-        bottom: 7.7em;
-        left: .25em;
+        bottom: 7em;
+        left: .7em;
         height: 2em;
         text-align: right;
         font-size: 24px;
+    }
+
+    #about-me-section {
+        padding: 2em 0;
+    }
+}
+
+@media screen and (max-width:790px){
+    #about-me-sub {
+        font-size: 1em;
     }
 }
 
@@ -398,24 +418,62 @@ font-size: var(--fs-h2);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 20em;
-        bottom: 22.7em;
+        width: 21.7em;
+        bottom: 21em;
         left: 4.75em;
         height: 2em;
         text-align: center;
         font-size: 18px;
     }
+
+    #about-me-sub {
+        margin: 0px 0em 0em 0;
+        height: 2.5em;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 1em;
+    }
+    .para-about {
+        margin: 12px 5% 4px 6%;
+    }
+
+    .work-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-@media screen and (max-width:560.5px){
+@media screen and (max-width:575px){
     #para-subtitle-intro {
         position: absolute;
-        width: 18em;
-        bottom: 22.7em;
-        left: 4.75em;
+        width: 21.7em;
+        bottom: 21em;
+        left: 5.75em;
         height: 2em;
         text-align: center;
         font-size: 18px;
+    }
+
+    .para-about {
+        margin: 12px 7% 4px 8%;
+    }
+}
+
+@media screen and (max-width:565px){
+    #para-subtitle-intro {
+        left: 5.4em;
+    }
+}
+
+@media screen and (max-width:545px){
+    #para-subtitle-intro {
+        left: 4.7em;
+    }
+
+    .para-about {
+        margin: 12px 5% 4px 8%;
     }
 }
 
@@ -429,14 +487,46 @@ font-size: var(--fs-h2);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 17em;
-        bottom: 22.7em;
-        left: 4.3em;
+        width: 19em;
+        bottom: 20.8em;
+        left: 4.7em;
         height: 2em;
         text-align: center;
         font-size: 18px;
     }
+
+    .para-about {
+        margin: 12px 5% 4px 7%;
+    }
 }
+
+@media screen and (max-width:465px){
+    #para-subtitle-intro {
+        left: 3.6em;
+    }
+}
+
+@media screen and (max-width:420px){
+    #para-subtitle-intro {
+        left: 2.5em;
+    }
+
+    .para-about {
+        margin: 12px 3% 4px 3%;
+    }
+}
+
+@media screen and (max-width:393px){
+    #para-subtitle-intro {
+        position: absolute;
+        width: 20em;
+        bottom: 22.2em;
+        left: 1.5em;
+        height: 2em;
+        text-align: center;
+        font-size: 17px;
+    }
+} 
 
 @media screen and (max-width:376px){
     .section-title {
@@ -445,17 +535,27 @@ font-size: var(--fs-h2);
         text-align: center;
         margin-right: 1.5em;
     }
-    
     #para-subtitle-intro {
-        position: absolute;
-        width: 17em;
-        bottom: 24em;
-        left: 1.5em;
-        height: 2em;
-        text-align: center;
-        font-size: 17px;
+        left: 1.2em;
+        bottom: 19.3em;
     }
-}
+
+    #about-me-sub {
+        margin: 0px -1em 0em -1em;
+    }
+
+    .para-about {
+        margin: 12px 0% 4px 0%;
+    }
+
+    .work-item {
+        width: 22em;
+    }
+
+    section {
+        padding: 2em 2em;
+    }
+}  
 
 @media screen and (max-width:361px){
     .section-title {
@@ -467,11 +567,75 @@ font-size: var(--fs-h2);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 17em;
-        bottom: 24em;
+        width: 18.5em;
+        bottom: 19.4em;
         left: 1.25em;
         height: 2em;
         text-align: center;
         font-size: 17px;
+    }
+    
+    .para-about {
+        margin: 12px -3% 4px -3%;
+    }
+
+    .work-item {
+        width: 20em;
+        height: 15em;
+    }
+
+    .icon-item {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:350px){
+    #para-subtitle-intro {
+        left: 1em;
+    }
+
+    #about-me-sub {
+        font-size: .8em;
+    }
+
+    .para-about {
+        margin: 12px -3% 4px -1%;
+    }
+}
+
+@media screen and (max-width:320px){
+    #para-subtitle-intro {
+        left: .15em;
+    }
+
+    .para-subtitle {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:300px){
+    #about-me-sub {
+        font-size: .7em;
+    }
+
+    #para-subtitle-intro {
+        left: -.85em;
+    }
+
+    #today-date {
+        margin-left: 0.2em;
+    }
+
+    .nav-toggle {
+        right: 0em;
+    }
+    .work-item {
+        width: 17em;
+        height: 12em;
+    }
+
+    .icon-item {
+        margin: 0px 21px 22px;
     }
 }
