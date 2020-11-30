@@ -5,8 +5,13 @@ Here is my personal portfolio 2.0! This portfolio is a polished and modernized v
 # Screenshot
 Here are mocks of Portfolio 2.0.
 
+Home Page
 ![portfolio_2.0](assets/screenshot.png)
+
+Navigation Menu
 ![portfolio_2.0](assets/screenshot2.png)
+
+Project Page
 ![portfolio_2.0](assets/screenshot3.png)
 
 # Link
