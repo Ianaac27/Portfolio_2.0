@@ -226,7 +226,7 @@ section { padding: 5em 2em; }
 #project-title {color: var(--clr-silver);}
 
 #project-sub {
-    margin: 0px 16em 1em 0;
+    margin: 0px 12em 1em 0;
     height: 2.5em;
     text-align: center;
     padding-top: 8px;
@@ -378,6 +378,10 @@ color: var(--clr-dark);
         width: 29em;
         height: 18.5em;
     }
+
+    #project-sub {
+        margin: 0px 9em 1em 0;
+    }
 }
 
 @media screen and (max-width:1199px){
@@ -411,7 +415,8 @@ color: var(--clr-dark);
         align-items: center;
     }
      .project-left {
-        width: 100%;
+        width: 105%;
+        padding-bottom: 2.5em;
     }
 
     .project-links{
@@ -445,10 +450,6 @@ color: var(--clr-dark);
 @media screen and (max-width:1017px){
     #about-me-sub {
         font-size: 1.25em;
-    }
-
-    #project-sub {
-        margin: 0px 11em 1em 0;
     }
 }
 
@@ -495,7 +496,7 @@ color: var(--clr-dark);
     }
 
     .project-left {
-        width: 100%;
+        width: 105%;
     }
 
     #project-title {
@@ -695,7 +696,7 @@ color: var(--clr-dark);
 @media screen and (max-width:361px){
     .section-title {
         margin-bottom: .25em;
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-align: center;
         margin-right: 1.5em;
     }
@@ -741,6 +742,14 @@ color: var(--clr-dark);
         width: 16em;
         height: 11.5em;
     }
+
+    .project-url {
+        font-size: 1.5em;
+    }
+
+    #project-sub {
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width:320px){
@@ -777,5 +786,9 @@ color: var(--clr-dark);
 
     .icon-item {
         margin: 0px 21px 22px;
+    }
+
+    #project-sub {
+        font-size: 1em;
     }
 }
