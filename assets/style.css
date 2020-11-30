@@ -262,17 +262,19 @@ section { padding: 5em 2em; }
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: 3.5em;
 }
 
 .project-url {
 font-style: var(--ff-primary);
 font-size: var(--fs-h2);
+color: var(--clr-dark);
 }
 
 .project-url:hover {
     color: var(--clr-accent);
     cursor: pointer;
+    text-decoration: none;
     }
 
 .url-icon {
@@ -417,7 +419,7 @@ font-size: var(--fs-h2);
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 7em;
+        padding-top: 4em;
     }
 
     .project-url {
