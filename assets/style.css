@@ -450,7 +450,7 @@ color: var(--clr-dark);
     }
 }
 
-@media screen and (max-width:1017px){
+@media screen and (max-width:1041px){
     #about-me-sub {
         font-size: 1.25em;
     }
@@ -488,7 +488,7 @@ color: var(--clr-dark);
     }
 }
 
-@media screen and (max-width:790px){
+@media screen and (max-width:800px){
     #about-me-sub {
         font-size: 1em;
     }
