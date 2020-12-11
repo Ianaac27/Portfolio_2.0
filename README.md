@@ -7,8 +7,8 @@ Here is my personal portfolio 2.0! This portfolio is a polished and modernized v
 * [License](#license)
 * [Contributing](#contributing)
 * [Screenshot](#screenshot)
-* [Questions](#questions)
 * [Link](#link)
+* [Questions](#questions)
 
 ## License
 
