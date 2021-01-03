@@ -322,6 +322,27 @@ color: var(--clr-dark);
     opacity: .75;
 }
 /* ======================================================== Skills ================================================== */
+#skill {
+    margin-top: -6em;
+}
+
+#skill-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#skill-title {
+    text-align: center;
+    margin-bottom: .15em;
+}
+
+.skill-icon {
+    font-size: 3em;
+    color: var(--clr-silver);
+    margin: 25px 25px 0px 0px;
+    text-decoration: none;
+}
 
 /* ======================================================== Footer ================================================== */
 #contactMe {
@@ -590,6 +611,11 @@ color: var(--clr-dark);
     .para-about {
         margin: 12px 7% 4px 8%;
     }
+
+    .skill-icon {
+        font-size: 2em;
+        margin: 25px 20px 0px 0px;
+    }
 }
 
 @media screen and (max-width:565px){
@@ -657,6 +683,10 @@ color: var(--clr-dark);
     .project-right {
         padding-top: 6em;
     }
+
+    .skill-icon {
+        margin: 25px 10px 0px 0px;
+    }
 }
 
 @media screen and (max-width:393px){
@@ -706,6 +736,10 @@ color: var(--clr-dark);
     .project-right {
         padding-top: 6em;
     }
+
+    #skill {
+        margin-top: -2em;
+    }
 }  
 
 @media screen and (max-width:361px){
@@ -738,6 +772,8 @@ color: var(--clr-dark);
     .icon-item {
         font-size: 1em;
     }
+
+    
 }
 
 @media screen and (max-width:350px){
@@ -809,5 +845,9 @@ color: var(--clr-dark);
 
     #email {
         font-size: 1em;
+    }
+
+    .skill-icon {
+        margin: 25px 4px 0px 0px;
     }
 }
