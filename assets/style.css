@@ -336,13 +336,24 @@ color: var(--clr-dark);
     color: var(--clr-light);
     font-size: 1.7em;
     font-family: var(--ff-secondary);
-    margin: 25px 0 25px 0;
+    margin: 25px 0 10px 0;
 }
 
 .icon-item {
     font-size: 2em;
     color: var(--clr-silver);
     margin: 0px 30px 25px;
+    text-decoration: none;
+}
+
+#email {
+    font-size: 1.5em;
+    color: var(--clr-light);
+    margin: 0px 30px 25px;
+}
+
+#email:hover {
+    color: var(--clr-dark);
     text-decoration: none;
 }
 
@@ -793,6 +804,10 @@ color: var(--clr-dark);
     }
 
     #project-sub {
+        font-size: 1em;
+    }
+
+    #email {
         font-size: 1em;
     }
 }
