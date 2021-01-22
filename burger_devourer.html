@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="icon" href="assets/IFC.PNG" type="image/gif" sizes="16x16">
+    <title>Burger Devourer</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="today-date"></h1>
+        </div>
+        <button class="nav-toggle fas fa-bars" aria-label="toggle navigation">
+        </button>
+        <nav class="nav">
+            <ul class="navlinks">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="index.html#aboutMe">About Me</a></li>
+                <li class="nav-link"><a href="index.html#work">Work</a></li>
+                <li class="nav-link"><a href="index.html#skill">Skills</a></li>
+                <li class="nav-link"><a href="index.html#contactMe">Contact Me</a></li>
+                <li class="nav-link"><a href="assets/Developer Resume.pdf" download="assets/resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="project-main">
+  <!-- Main -->
+        <section class="project-left">
+                <h2 class="section-title" id="project-title">Burger Devourer</h2>
+                <p class="para-subtitle-accent" id="project-sub">Eyes on the fries</p>
+                <div class="section-body">
+                    <p class="para-project">The Burger Devourer is a fun application that displays my knowledge in MVC and how to provide the user with the ability to view the content, create something new within the content, update, and delete. This is done through the Node.js server while using the npm packages Express, Handlebars, and MySQL. With Node and Express, I am able to connect MySQL workbench so I could have a running database. With this, I am able to configure this data through my ORM and model files of my application. This information would then be passed through the controller and onto the views file which contains the content to display the application and to provide the functions listed above for the user. The main webpage is generated through Handlebars. Once the user inputs their information, it will then pass through to the controller, and back down to the MySQL database for any database modifications. I have deployed this application through Heroku.</p>
+                </div> 
+        </section>
+        
+        <section class="project-right">
+            <div class="project-item">
+                <a href="https://burger-devourer-mvc.herokuapp.com/"><img class="portfolio-img" id="project-img" src="assets/burgerd5.jpg" alt=""></a>
+            </div>
+            <div class="project-links">
+                <a class="project-url" href="https://burger-devourer-mvc.herokuapp.com/">Live Website<i class="url-icon fas fa-link"></i></i></a>
+                <a class="project-url" href="https://github.com/Ianaac27/Burger_Devourer">Git Hub Repository<i class="url-icon fab fa-github"></i></a>
+            </div>    
+        </section>  
+    </main>
+<!-- Footer -->
+    <footer class="content" id="contactMe">
+        <h1 id="contact-title">Contact Me</h1>
+        <p><a id="email" class="icon-item" href= "mailto:ian.fleshmancooper@gmail.com">ian.fleshmancooper@gmail.com</a></p>
+        <div id="contact-icons d-flex justify-content-center align-items-center">
+            <a class="icon-item fab fa-github" href= "https://github.com/Ianaac27"></a>
+            <a class="icon-item fab fa-linkedin" href= "https://www.linkedin.com/in/ian-fleshman-cooper-934995163/"></a>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
