@@ -188,7 +188,7 @@ section { padding: 5em 2em; }
 /* ================================================== About me section ================================================================= */
 #aboutMe {
     background-color: var(--clr-dark);
-    background-image: url(background.jpg);
+    background-image: url(./images/background.jpg);
     color: var(--clr-light);
     background-size: cover;
     background-blend-mode: multiply;
