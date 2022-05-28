@@ -24,13 +24,13 @@ Ianaac27
 Here are mocks of Portfolio 2.0.
 
 Home Page
-![portfolio_2.0](assets/screenshot.png)
+![portfolio_2.0](assets/images/screenshot.png)
 
 Navigation Menu
-![portfolio_2.0](assets/screenshot2.png)
+![portfolio_2.0](assets/images/screenshot2.png)
 
 Project Page
-![portfolio_2.0](assets/screenshot3.png)
+![portfolio_2.0](assets/images/screenshot3.png)
 
 # Link
 Take a look at the live version [here.](https://ianaac27.github.io/Portfolio_2.0/index.html)
