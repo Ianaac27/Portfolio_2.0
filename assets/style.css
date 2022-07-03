@@ -601,6 +601,7 @@ color: var(--clr-dark);
 
     #project-sub {
         margin: 0px 0em 0em 0em;
+        font-size: 1em;
     }
 
     .para-project {
