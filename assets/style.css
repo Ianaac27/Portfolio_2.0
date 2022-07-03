@@ -752,6 +752,10 @@ color: var(--clr-dark);
     .skill-icon {
         margin: 25px 10px 0px 0px;
     }
+
+    #project-sub {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width:393px){
@@ -863,9 +867,9 @@ color: var(--clr-dark);
         font-size: 1.5em;
     }
 
-    #project-sub {
+    /* #project-sub {
         font-size: 1.3em;
-    }
+    } */
 }
 
 @media screen and (max-width:320px){
@@ -904,9 +908,9 @@ color: var(--clr-dark);
         margin: 0px 21px 22px;
     }
 
-    #project-sub {
+    /* #project-sub {
         font-size: 1em;
-    }
+    } */
 
     #email {
         font-size: 1em;
