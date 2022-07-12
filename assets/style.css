@@ -232,7 +232,7 @@ section { padding: 5em 2em; }
 
 #para-subtitle-intro {
     position: absolute;
-    width: 25.4em;
+    width: 23em;
     bottom: 3.4em;
     left: 4.4em;
     height: 2em;
@@ -557,7 +557,7 @@ color: var(--clr-dark);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 29.6em;
+        width: 27em;
         bottom: 7em;
         left: .7em;
         height: 2em;
