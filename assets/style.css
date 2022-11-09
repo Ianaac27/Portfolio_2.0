@@ -212,6 +212,7 @@ section { padding: 5em 2em; }
 
 .para-subtitle {
     margin: 0;
+    margin-top: 10px;
     font-size: var(--fs-h3); 
 }
 
@@ -350,6 +351,14 @@ color: var(--clr-dark);
 #work-title {margin-bottom: .15em;}
 
 #work-sub {margin-bottom: 1.5em;}
+
+.work-type {
+    margin: 0;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    font-size: var(--fs-h3); 
+    font-weight: var(--fw-bold);
+}
 
 .work-row {
     display: flex;
@@ -494,6 +503,10 @@ color: var(--clr-dark);
     #about-me-section {
         padding: 2em 3em;
     }
+
+    .work-type {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width:1070px){
@@ -541,6 +554,10 @@ color: var(--clr-dark);
         height: 9em;
         width: 10em;
     }
+
+    .work-type {
+        margin-left: 135px;
+    }
 }
 
 @media screen and (max-width:1041px){
@@ -578,6 +595,10 @@ color: var(--clr-dark);
         font-style: var(--ff-primary);
         font-size: var(--fs-h2);
         margin-top: 30px;
+    }
+
+    .work-type {
+        margin-left: 15px;
     }
 }
 
@@ -661,6 +682,16 @@ color: var(--clr-dark);
         height: 16em;
         width: 24em;
     }
+
+    .work-type {
+        margin-left: 0px;
+        text-align: center;
+        /* font-size: medium; */
+    }
+
+    .para-subtitle {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width:575px){
@@ -682,6 +713,10 @@ color: var(--clr-dark);
         font-size: 2em;
         margin: 25px 20px 0px 0px;
     }
+
+    /* .work-type {
+        font-size: 12px;
+    } */
 }
 
 @media screen and (max-width:565px){
@@ -843,6 +878,9 @@ color: var(--clr-dark);
         font-size: 1em;
     }
 
+    /* .work-type {
+        font-size: 10px;
+    } */
     
 }
 
