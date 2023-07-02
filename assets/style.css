@@ -192,6 +192,14 @@ img {
     z-index: 2;    
 }
 
+.salesforce-badge {
+    width: 175px;
+    position: absolute;
+    margin-left: 95%;
+    margin-bottom: 200px;
+    rotate: 17deg;
+}
+
 h1, h2, h3 {
     line-height: 1;
     margin: 0;
@@ -485,6 +493,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:1199px){
+    .salesforce-badge {
+        width: 150px;
+        position: absolute;
+        margin-bottom: 200px;
+        rotate: 17deg;
+    }
+    
     .intro-info {
         padding-left: 1.5em;
         padding-bottom: 6em;
@@ -566,6 +581,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:991px){
+    .salesforce-badge {
+        width: 120px;
+        position: absolute;
+        margin-bottom: 200px;
+        rotate: 17deg;
+    }
+
     .section-title {
         margin-bottom: .25em;
         font-size: 2em;
@@ -602,6 +624,10 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:800px){
+    .salesforce-badge {
+        margin-left: 78%;
+    }
+
     #about-me-sub {
         font-size: 1em;
     }
@@ -634,6 +660,14 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:767.5px){
+    .salesforce-badge {
+        width: 120px;
+        position: absolute;
+        margin-bottom: 0px;
+        rotate: 12deg;
+        margin-left: 80%;
+    }
+
     #intro {
         flex-direction: column-reverse;
         justify-content: center;
@@ -694,6 +728,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:575px){
+    .salesforce-badge {
+        width: 75px;
+        margin-bottom: 425px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+
     #para-subtitle-intro {
         position: absolute;
         width: 21.7em;
@@ -809,6 +850,12 @@ color: var(--clr-dark);
 } 
 
 @media screen and (max-width:376px){
+    .salesforce-badge {
+        width: 50px;
+        margin-bottom: 360px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
     .section-title {
         margin-bottom: .25em;
         font-size: 1.4em;
@@ -921,6 +968,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:300px){
+    .salesforce-badge {
+        width: 30px;
+        margin-bottom: 365px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+
     #about-me-sub {
         font-size: .7em;
     }
