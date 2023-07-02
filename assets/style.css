@@ -233,7 +233,7 @@ section { padding: 5em 2em; }
 
 #para-subtitle-intro {
     position: absolute;
-    width: 25.4em;
+    width: 22.75em;
     bottom: 3.4em;
     left: 4.4em;
     height: 2em;
@@ -492,7 +492,6 @@ color: var(--clr-dark);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 25.8em;
         bottom: 3.3em;
         left: 1.5em;
         height: 2em;
@@ -574,7 +573,7 @@ color: var(--clr-dark);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 29.6em;
+        width: 27em;
         bottom: 7em;
         left: .7em;
         height: 2em;
@@ -751,7 +750,7 @@ color: var(--clr-dark);
         position: absolute;
         width: 19em;
         bottom: 20.8em;
-        left: 4.7em;
+        left: 4em;
         height: 2em;
         text-align: center;
         font-size: 18px;
@@ -764,7 +763,7 @@ color: var(--clr-dark);
 
 @media screen and (max-width:465px){
     #para-subtitle-intro {
-        left: 3.6em;
+        left: 2.5em;
     }
     .project-item {
         width: 25em;
@@ -774,9 +773,8 @@ color: var(--clr-dark);
 
 @media screen and (max-width:420px){
     #para-subtitle-intro {
-        left: 2.5em;
+        left: 1.5em;
     }
-
     .para-about {
         margin: 12px 3% 4px 3%;
     }
