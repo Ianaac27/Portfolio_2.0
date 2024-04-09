@@ -241,8 +241,8 @@ section { padding: 5em 2em; }
 
 #para-subtitle-intro {
     position: absolute;
-    width: 20.8em;
-    bottom: 3.4em;
+    width: 21em;
+    bottom: 4.5em;
     left: 4.8em;
     height: 2em;
     text-align: right;
@@ -507,7 +507,7 @@ color: var(--clr-dark);
     
     #para-subtitle-intro {
         position: absolute;
-        bottom: 3.3em;
+        bottom: 4.6em;
         left: 2.2em;
         height: 2em;
         text-align: right;
@@ -596,7 +596,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 25.5em;
-        bottom: 7em;
+        bottom: 8.75em;
         left: 1em;
         height: 2em;
         text-align: right;
@@ -686,7 +686,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 21.7em;
-        bottom: 21em;
+        bottom: 27.4em;
         left: 4.75em;
         height: 2em;
         text-align: center;
@@ -738,7 +738,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 21.7em;
-        bottom: 21em;
+        bottom: 27.3em;
         left: 5.75em;
         height: 2em;
         text-align: center;
@@ -790,7 +790,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 19em;
-        bottom: 20.8em;
+        bottom: 27.3em;
         left: 4em;
         height: 2em;
         text-align: center;
@@ -837,7 +837,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 20em;
-        bottom: 22.2em;
+        bottom: 29em;
         left: 1.5em;
         height: 2em;
         text-align: center;
@@ -864,7 +864,7 @@ color: var(--clr-dark);
     }
     #para-subtitle-intro {
         left: 1.2em;
-        bottom: 19.3em;
+        bottom: 26em;
     }
 
     #about-me-sub {
@@ -903,7 +903,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 18.5em;
-        bottom: 19.4em;
+        bottom: 26em;
         left: 1.25em;
         height: 2em;
         text-align: center;
