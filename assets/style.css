@@ -429,6 +429,14 @@ color: var(--clr-dark);
 }
 
 /* ======================================================== Footer ================================================== */
+footer {
+    position: absolute;
+    width: 100%;
+    /* bottom: 0; */
+    /* left: 0; */
+    /* z-index: 10; */
+}
+
 #contactMe {
     background-color: var(--clr-accent);
     display: flex;
