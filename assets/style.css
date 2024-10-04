@@ -354,6 +354,17 @@ color: var(--clr-dark);
     color: var(--clr-accent);
 }
 
+/* ==================================================== Blog section ================================================== */
+#blog {
+   margin-bottom: -5em; 
+}
+
+#blog-title, #blog-sub {text-align: center;}
+
+#blog-title {margin-bottom: .15em;}
+
+#blog-sub {margin-bottom: 1.5em;}
+
 /* ==================================================== Works section ================================================== */
 #work-title, #work-sub {text-align: center;}
 
