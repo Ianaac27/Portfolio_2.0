@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <link rel="icon" href="../assets/images/IFC.PNG" type="image/gif" sizes="16x16">
+    <title>The Neighborhood</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="today-date"></h1>
+        </div>
+        <div class="nav-toggle" id="nav-icon" aria-label="toggle navigation">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </div>
+        <nav class="nav">
+            <ul class="navlinks">
+                <li class="nav-link"><a href="../index.html">Home</a></li>
+                <li class="nav-link"><a href="../index.html#aboutMe">About Me</a></li>
+                <li class="nav-link"><a href="../index.html#work">Work</a></li>
+                <li class="nav-link"><a href="../index.html#skill">Skills</a></li>
+                <li class="nav-link"><a href="../index.html#contactMe">Contact Me</a></li>
+                <li class="nav-link"><a href="../assets/Developer_Resume.pdf">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="project-main">
+  <!-- Main -->
+        <section class="project-left">
+                <h2 class="section-title" id="project-title">The Neighborhood</h2>
+                <p class="para-subtitle-accent" id="project-sub">Get connected</p>
+                <div class="section-body">
+                    <p class="para-project">The Neighborhood is a virtual neighborhood that allows users to connect with others based on common interest. With COVID running the world, finding connection, friendship, and socializing outside of the home has become more complicated than ever. Users have the freedom to create a variety of interests for others to get connected, and who may share the same interest. At this point, the app only offers user connection via email, however, there is much room for future development and improvement to grow the app in other means of communication.</p>
+                    <p class="para-project">This app was created to demonstrate our development teams’ ability to gather user input and store that information within a MySQL database. From here we can insert, display, and update user information and category information to make the app function as it does.</p>
+                    <p class="para-project">My role in this project was mainly on the backend as I was responsible for setting up the database and utilizing Sequelize to connect the database, as well as establish API routes for specific queries. As mentioned, our app has the functionality to add new users and categories, display the user and category information, as well as update the users Category ID so they can change their interests. The relationship between the tables is currently a One-to-Many but has room to improve to Many-to-Many so users can have the ability to choose many interests at a time, rather than one.</p>
+                    <p class="para-project">I was also responsible for majority of the functionality within the website utilizing jQuery, ajax, and Handlebars.js, as well as the websites responsiveness for mobile friendliness.</p>
+                </div> 
+        </section>
+        
+        <section class="project-right">
+            <div class="project-item">
+                <a href="https://neighborhood-connectwithothers.herokuapp.com/"><img class="portfolio-img" id="project-img" src="../assets/images/neighborhood2.jpg" alt=""></a>
+            </div>
+            <div class="project-links">
+                <a class="project-url" href="https://neighborhood-connectwithothers.herokuapp.com/">Live Website<i class="url-icon fas fa-link"></i></i></a>
+                <a class="project-url" href="https://github.com/zhanez/Neighborhood">Git Hub Repository<i class="url-icon fab fa-github"></i></a>
+            </div>    
+        </section>  
+    </main>
+<!-- Footer -->
+    <footer class="content" id="contactMe">
+        <h1 id="contact-title">Contact Me</h1>
+        <p><a id="email" class="icon-item" href= "mailto:ian.fleshmancooper@gmail.com">ian.fleshmancooper@gmail.com</a></p>
+        <div id="contact-icons d-flex justify-content-center align-items-center">
+            <a class="icon-item fab fa-github" href= "https://github.com/Ianaac27"></a>
+            <a class="icon-item fab fa-linkedin" href= "https://www.linkedin.com/in/ian-fleshman-cooper-934995163/"></a>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+</html>
