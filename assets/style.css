@@ -14,6 +14,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #1bb6e6;
+    /* --clr-accent: #913131; */
     --clr-accent-two: #040d27;
     --clr-silver: #bdbcbc;
     
@@ -192,6 +193,14 @@ img {
     z-index: 2;    
 }
 
+.salesforce-badge {
+    width: 175px;
+    position: absolute;
+    margin-left: 95%;
+    margin-bottom: 200px;
+    rotate: 17deg;
+}
+
 h1, h2, h3 {
     line-height: 1;
     margin: 0;
@@ -212,6 +221,7 @@ section { padding: 5em 2em; }
 
 .para-subtitle {
     margin: 0;
+    margin-top: 10px;
     font-size: var(--fs-h3); 
 }
 
@@ -232,9 +242,9 @@ section { padding: 5em 2em; }
 
 #para-subtitle-intro {
     position: absolute;
-    width: 22.4em;
-    bottom: 3.4em;
-    left: 4.4em;
+    width: 20.6em;
+    bottom: 4.5em;
+    left: 4.8em;
     height: 2em;
     text-align: right;
     font-size: 35px;
@@ -344,12 +354,31 @@ color: var(--clr-dark);
     color: var(--clr-accent);
 }
 
+/* ==================================================== Blog section ================================================== */
+#blog {
+   margin-bottom: -5em; 
+}
+
+#blog-title, #blog-sub {text-align: center;}
+
+#blog-title {margin-bottom: .15em;}
+
+#blog-sub {margin-bottom: 1.5em;}
+
 /* ==================================================== Works section ================================================== */
 #work-title, #work-sub {text-align: center;}
 
 #work-title {margin-bottom: .15em;}
 
 #work-sub {margin-bottom: 1.5em;}
+
+.work-type {
+    margin: 0;
+    margin-left: 140px;
+    margin-bottom: 10px;
+    font-size: var(--fs-h3); 
+    font-weight: var(--fw-bold);
+}
 
 .work-row {
     display: flex;
@@ -476,6 +505,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:1199px){
+    .salesforce-badge {
+        width: 150px;
+        position: absolute;
+        margin-bottom: 200px;
+        rotate: 17deg;
+    }
+    
     .intro-info {
         padding-left: 1.5em;
         padding-bottom: 6em;
@@ -483,9 +519,8 @@ color: var(--clr-dark);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 22.8em;
-        bottom: 3.3em;
-        left: 1.5em;
+        bottom: 4.6em;
+        left: 2.2em;
         height: 2em;
         text-align: right;
         font-size: 35px;
@@ -493,6 +528,10 @@ color: var(--clr-dark);
 
     #about-me-section {
         padding: 2em 3em;
+    }
+
+    .work-type {
+        margin-left: 50px;
     }
 }
 
@@ -541,6 +580,10 @@ color: var(--clr-dark);
         height: 9em;
         width: 10em;
     }
+
+    .work-type {
+        margin-left: 135px;
+    }
 }
 
 @media screen and (max-width:1041px){
@@ -550,6 +593,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:991px){
+    .salesforce-badge {
+        width: 120px;
+        position: absolute;
+        margin-bottom: 200px;
+        rotate: 17deg;
+    }
+
     .section-title {
         margin-bottom: .25em;
         font-size: 2em;
@@ -557,9 +607,9 @@ color: var(--clr-dark);
     
     #para-subtitle-intro {
         position: absolute;
-        width: 26.6em;
-        bottom: 7em;
-        left: .7em;
+        width: 25.5em;
+        bottom: 8.75em;
+        left: 1em;
         height: 2em;
         text-align: right;
         font-size: 24px;
@@ -579,9 +629,17 @@ color: var(--clr-dark);
         font-size: var(--fs-h2);
         margin-top: 30px;
     }
+
+    .work-type {
+        margin-left: 75px;
+    }
 }
 
 @media screen and (max-width:800px){
+    .salesforce-badge {
+        margin-left: 78%;
+    }
+
     #about-me-sub {
         font-size: 1em;
     }
@@ -601,6 +659,7 @@ color: var(--clr-dark);
 
     #project-sub {
         margin: 0px 0em 0em 0em;
+        font-size: 1em;
     }
 
     .para-project {
@@ -613,6 +672,14 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:767.5px){
+    .salesforce-badge {
+        width: 120px;
+        position: absolute;
+        margin-bottom: 0px;
+        rotate: 12deg;
+        margin-left: 80%;
+    }
+
     #intro {
         flex-direction: column-reverse;
         justify-content: center;
@@ -631,7 +698,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 21.7em;
-        bottom: 21em;
+        bottom: 27.4em;
         left: 4.75em;
         height: 2em;
         text-align: center;
@@ -660,13 +727,30 @@ color: var(--clr-dark);
         height: 16em;
         width: 24em;
     }
+
+    .work-type {
+        margin-left: 0px;
+        text-align: center;
+        /* font-size: medium; */
+    }
+
+    .para-subtitle {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width:575px){
+    .salesforce-badge {
+        width: 75px;
+        margin-bottom: 425px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+
     #para-subtitle-intro {
         position: absolute;
         width: 21.7em;
-        bottom: 21em;
+        bottom: 27.3em;
         left: 5.75em;
         height: 2em;
         text-align: center;
@@ -681,6 +765,10 @@ color: var(--clr-dark);
         font-size: 2em;
         margin: 25px 20px 0px 0px;
     }
+
+    /* .work-type {
+        font-size: 12px;
+    } */
 }
 
 @media screen and (max-width:565px){
@@ -714,8 +802,8 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 19em;
-        bottom: 20.8em;
-        left: 4.7em;
+        bottom: 27.3em;
+        left: 4em;
         height: 2em;
         text-align: center;
         font-size: 18px;
@@ -728,7 +816,7 @@ color: var(--clr-dark);
 
 @media screen and (max-width:465px){
     #para-subtitle-intro {
-        left: 3.6em;
+        left: 2.5em;
     }
     .project-item {
         width: 25em;
@@ -738,9 +826,8 @@ color: var(--clr-dark);
 
 @media screen and (max-width:420px){
     #para-subtitle-intro {
-        left: 2.5em;
+        left: 1.5em;
     }
-
     .para-about {
         margin: 12px 3% 4px 3%;
     }
@@ -752,13 +839,17 @@ color: var(--clr-dark);
     .skill-icon {
         margin: 25px 10px 0px 0px;
     }
+
+    #project-sub {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width:393px){
     #para-subtitle-intro {
         position: absolute;
         width: 20em;
-        bottom: 22.2em;
+        bottom: 29em;
         left: 1.5em;
         height: 2em;
         text-align: center;
@@ -771,6 +862,12 @@ color: var(--clr-dark);
 } 
 
 @media screen and (max-width:376px){
+    .salesforce-badge {
+        width: 50px;
+        margin-bottom: 360px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
     .section-title {
         margin-bottom: .25em;
         font-size: 1.4em;
@@ -779,7 +876,7 @@ color: var(--clr-dark);
     }
     #para-subtitle-intro {
         left: 1.2em;
-        bottom: 19.3em;
+        bottom: 26em;
     }
 
     #about-me-sub {
@@ -818,7 +915,7 @@ color: var(--clr-dark);
     #para-subtitle-intro {
         position: absolute;
         width: 18.5em;
-        bottom: 19.4em;
+        bottom: 26em;
         left: 1.25em;
         height: 2em;
         text-align: center;
@@ -838,6 +935,9 @@ color: var(--clr-dark);
         font-size: 1em;
     }
 
+    /* .work-type {
+        font-size: 10px;
+    } */
     
 }
 
@@ -863,9 +963,9 @@ color: var(--clr-dark);
         font-size: 1.5em;
     }
 
-    #project-sub {
+    /* #project-sub {
         font-size: 1.3em;
-    }
+    } */
 }
 
 @media screen and (max-width:320px){
@@ -880,6 +980,13 @@ color: var(--clr-dark);
 }
 
 @media screen and (max-width:300px){
+    .salesforce-badge {
+        width: 30px;
+        margin-bottom: 365px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+
     #about-me-sub {
         font-size: .7em;
     }
@@ -904,9 +1011,9 @@ color: var(--clr-dark);
         margin: 0px 21px 22px;
     }
 
-    #project-sub {
+    /* #project-sub {
         font-size: 1em;
-    }
+    } */
 
     #email {
         font-size: 1em;
