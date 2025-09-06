@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <link rel="icon" href="../assets/images/IFC.PNG" type="image/gif" sizes="16x16">
+    <title>MovieDb</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="today-date"></h1>
+        </div>
+        <div class="nav-toggle" id="nav-icon" aria-label="toggle navigation">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </div>
+        <nav class="nav">
+            <ul class="navlinks">
+                <li class="nav-link"><a href="../index.html">Home</a></li>
+                <li class="nav-link"><a href="../index.html#aboutMe">About Me</a></li>
+                <li class="nav-link"><a href="../index.html#blog">Blog</a></li>
+                <li class="nav-link"><a href="../index.html#work">Work</a></li>
+                <li class="nav-link"><a href="../index.html#skill">Skills</a></li>
+                <li class="nav-link"><a href="../index.html#contactMe">Contact Me</a></li>
+                <li class="nav-link"><a href="../assets/Ian_Fleshman-Cooper_Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="project-main">
+  <!-- Main -->
+        <section class="project-left">
+                <h2 class="section-title" id="project-title">MovieDb</h2>
+                <p class="para-subtitle-accent" id="project-sub">Watch your favorites</p>
+                <div class="section-body">
+                    <p class="para-project">MovieDb is a full-stack application that allows users to search for any movie and view detailed information using the OMDb API. Designed to replicate the sleek, engaging style of popular movie databases and streaming platforms like Netflix, Disney+, and Amazon Prime Video, the app delivers a familiar yet custom experience.</p>
+                    <p class="para-project">Users can explore movie details, watch trailers, add or remove titles from their favorites list, and even shop for the movie via Google Shopping integration. Movie information is displayed in an interactive modal, creating a clean, immersive user interface.</p>
+                    <p class="para-project">Built with the MERN Stack—MongoDB, Express, React, and Node.js—this project also utilizes React Bootstrap, React Router DOM, Mongoose, React FontAwesome, and React Notifications Component. I developed all aspects of the application, including:</p>
+                    <ul>   
+                        <li class="para-project">Designing the MongoDB schema and database structure.</li>
+                        <li class="para-project">Implementing multiple OMDb API queries to retrieve rich movie data.</li>
+                        <li class="para-project">Creating API routes through Mongoose and React for storing and retrieving favorites.</li>
+                        <li class="para-project">Building full CRUD functionality and implementing smooth UI animations.</li>
+                        <li class="para-project">Ensuring mobile responsiveness and deploying the app to Heroku.</li>
+                    </ul> 
+                     <p class="para-project">One of the most challenging (and rewarding) features to develop was the toggle button for adding and removing movies from the favorites list. This feature required coordinating multiple actions with a single click—sending API requests, updating the database, and triggering the correct animations based on the movie’s status. This problem-solving experience strengthened my ability to integrate backend logic with intuitive frontend interactions.</p>
+                </div> 
+        </section>
+        
+        <section class="project-right">
+            <div class="project-item">
+                <a href="https://moviedb-ifc.herokuapp.com/" target="_blank"><img class="portfolio-img" id="project-img" src="../assets/images/moviedb.jpg" alt=""></a>
+            </div>
+            <div class="project-links">
+                <a class="project-url" href="https://moviedb-ifc.herokuapp.com/" target="_blank">Live Website<i class="url-icon fas fa-link"></i></i></a>
+            </div>
+            <div class="project-links">
+                <a class="project-url" href="https://github.com/Ianaac27/movie_react" target="_blank">Git Hub Repository<i class="url-icon fab fa-github"></i></a>
+            </div>       
+        </section>  
+    </main>
+<!-- Footer -->
+    <footer class="content" id="contactMe">
+        <h1 id="contact-title">Contact Me</h1>
+        <p><a id="email" class="icon-item" href= "mailto:ian.fleshmancooper@gmail.com">ian.fleshmancooper@gmail.com</a></p>
+        <div id="contact-icons d-flex justify-content-center align-items-center">
+            <a class="icon-item fab fa-salesforce" href= "https://trailblazer.me/id/ifleshman-cooper" target="_blank"></a>
+            <a class="icon-item fab fa-linkedin" href= "https://www.linkedin.com/in/ian-fleshman-cooper-934995163/" target="_blank"></a>
+            <a class="icon-item fab fa-github" href= "https://github.com/Ianaac27" target="_blank"></a>
+            <a class="icon-item fab fa-youtube" href= "https://www.youtube.com/channel/UCu2a3XgL2z66eXyd78gc8uA" target="_blank"></a>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

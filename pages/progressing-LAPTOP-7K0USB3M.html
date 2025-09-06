@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <link rel="icon" href="../assets/images/IFC.PNG" type="image/gif" sizes="16x16">
+    <title>Progressing</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="today-date"></h1>
+        </div>
+        <div class="nav-toggle" id="nav-icon" aria-label="toggle navigation">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </div>
+        <nav class="nav">
+            <ul class="navlinks">
+                <li class="nav-link"><a href="../index.html">Home</a></li>
+                <li class="nav-link"><a href="../index.html#aboutMe">About Me</a></li>
+                <li class="nav-link"><a href="../index.html#blog">Blog</a></li>
+                <li class="nav-link"><a href="../index.html#work">Work</a></li>
+                <li class="nav-link"><a href="../index.html#skill">Skills</a></li>
+                <li class="nav-link"><a href="../index.html#contactMe">Contact Me</a></li>
+                <li class="nav-link"><a href="../assets/Ian_Fleshman-Cooper_Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="project-main">
+  <!-- Main -->
+        <section class="project-left">
+                <h2 class="section-title" id="project-title">Progressing</h2>
+                <p class="para-subtitle-accent" id="project-sub">Track your goals</p>
+                <div class="section-body">
+                    <p class="para-project">Progressing is a MERN stack application that allows users to track their progress on life goals in which they set! The user can initially create a new goal by being prompted on what the goal is and asked what steps would be required for accomplishing the goal. They also have the option to select if their goal has a deadline or not. Once created, the goal will then be able to be seen on their dashboard, where they will be able to track their progress through a checklist showing the steps needed to accomplish the goal and they will have the ability to use a note section to log important ideas regarding their overall goal. As the user progresses through their goal, they will be notified with words of encouragement as they accomplish each step. When the final step is reached, the user will reach a 100% completion status for the goal and earn a gold star (badge)!</p>
+                    <p class="para-project">During this project, I was responsible for setting up the routing, using react-router-dom, developing the notifications system for the authentication errors, and the encouragement notifications with react-toastify. As well as, developing the algorithms and functionality to dynamically render the nested list of steps and to display the correct percentage for the circular progress bar, while toggling the steps for each goal. These algorithms were created using virtuals within the goals schema.</p>
+                </div> 
+        </section>
+        
+        <section class="project-right">
+            <div class="project-item">
+                <a href="https://drive.google.com/file/d/1x5CLyP7qBkGz2qVLEVHiD-VAS0JG6RDQ/view"><img class="portfolio-img" id="project-img" src="../assets/images/progressing.png" alt=""></a>
+            </div>
+            <div class="project-links">
+                <a class="project-url" href="https://progressing-pod10.herokuapp.com/">Live Website<i class="url-icon fas fa-link"></i></i></a>
+                <a class="project-url" href="https://github.com/JJHPhoto/progressing">Git Hub Repository<i class="url-icon fab fa-github"></i></a>
+            </div>    
+        </section>  
+    </main>
+<!-- Footer -->
+    <footer class="content" id="contactMe">
+        <h1 id="contact-title">Contact Me</h1>
+        <p><a id="email" class="icon-item" href= "mailto:ian.fleshmancooper@gmail.com">ian.fleshmancooper@gmail.com</a></p>
+        <div id="contact-icons d-flex justify-content-center align-items-center">
+            <a class="icon-item fab fa-salesforce" href= "https://trailblazer.me/id/ifleshman-cooper" target="_blank"></a>
+            <a class="icon-item fab fa-linkedin" href= "https://www.linkedin.com/in/ian-fleshman-cooper-934995163/" target="_blank"></a>
+            <a class="icon-item fab fa-github" href= "https://github.com/Ianaac27" target="_blank"></a>
+            <a class="icon-item fab fa-youtube" href= "https://www.youtube.com/channel/UCu2a3XgL2z66eXyd78gc8uA" target="_blank"></a>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

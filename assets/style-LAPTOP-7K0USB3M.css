@@ -1,0 +1,1025 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #1bb6e6;
+    /* --clr-accent: #913131; */
+    --clr-accent-two: #040d27;
+    --clr-silver: #bdbcbc;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+  
+}
+
+html {
+    scroll-behavior: smooth;
+
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family:var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+/* ============================================================ Header ==================================================== */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#today-date { 
+    font-size: var(--fs-h3);
+    margin-left: 1em;
+    margin-top: 1.25em;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: var(--clr-dark);
+    background-image: url(https://media.giphy.com/media/26n6CWImwECKu3fy0/giphy.gif);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
+    /* background: var(--clr-dark); */
+    color: var(--clr-light);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.navlinks {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks a {
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.navlinks a:hover {
+    color: var(--clr-accent);
+}
+
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+ 
+  #nav-icon {
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    right: 1em;
+    top: 1.7em;
+    z-index: 1000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+ 
+  .menu-bar {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: var(--clr-silver);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon span:nth-child(2) {
+    top: 12px;
+  }
+  
+  #nav-icon span:nth-child(3) {
+    top: 24px;
+  }
+  
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  #nav-icon.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
+/* =================================================== Intro section ============================================================ */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.portfolio-img { 
+    box-shadow: 15px 5px 30px var(--clr-dark);
+    width: 250px;
+    z-index: 2;    
+}
+
+.salesforce-badge {
+    width: 175px;
+    position: absolute;
+    margin-left: 95%;
+    margin-bottom: 200px;
+    rotate: 17deg;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { 
+    font-size: var(--fs-h1);
+ }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+section { padding: 5em 2em; }
+
+.section-title {
+    margin-bottom: .25em;
+    font-size: var(--fs-h1);
+}
+
+.para-subtitle {
+    margin: 0;
+    margin-top: 10px;
+    font-size: var(--fs-h3); 
+}
+
+.para-subtitle-accent {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    color: var(--clr-light);
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+#intro { position: relative; }
+
+.intro-info {
+    padding-left: 1.5em;
+    padding-bottom: 6em;
+}
+
+#para-subtitle-intro {
+    position: absolute;
+    width: 20.6em;
+    bottom: 4.5em;
+    left: 4.8em;
+    height: 2em;
+    text-align: right;
+    font-size: 35px;
+}
+
+/* ================================================== About me section ================================================================= */
+#aboutMe {
+    background-color: var(--clr-dark);
+    background-image: url(./images/background.jpg);
+    color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height:100%;
+}
+
+#about-me-title {color: var(--clr-silver);}
+#about-me-section { padding: 2em 5em; }
+
+.para-about {
+    margin: 12px 10% 4px 8%; 
+}
+
+#about-me-sub {
+    margin: 0px 16em 1em 0;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.5em;
+}
+
+/* =================================================== Project pages ============================================================= */
+.project-main {
+    display: flex;
+    margin-top: 3em;
+}
+.project-left {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    width: 60%;
+    padding-left: 2em;
+    padding-top: 2em;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+#project-title {color: var(--clr-silver);}
+
+#project-sub {
+    margin: 0px 12em 1em 0;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.5em;
+}
+
+.para-project {
+    margin: 12px 9% 4px 0%;
+}
+
+.project-right {
+    background: var(--clr-light);
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+
+.project-item {
+    box-shadow: 15px 5px 30px var(--clr-dark);
+    width: 38em;
+    height: 24.5em;
+    z-index: 2;
+    margin-top: -4em;
+}
+
+#project-img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3.5em;
+}
+
+.project-url {
+font-style: var(--ff-primary);
+font-size: var(--fs-h2);
+color: var(--clr-dark);
+}
+
+.project-url:hover {
+    color: var(--clr-accent);
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+.url-icon {
+    color: var(--clr-silver);
+    margin-left: 10px;
+}
+
+.url-icon:hover {
+    color: var(--clr-accent);
+}
+
+/* ==================================================== Blog section ================================================== */
+#blog {
+   margin-bottom: -5em; 
+}
+
+#blog-title, #blog-sub {text-align: center;}
+
+#blog-title {margin-bottom: .15em;}
+
+#blog-sub {margin-bottom: 1.5em;}
+
+/* ==================================================== Works section ================================================== */
+#work-title, #work-sub {text-align: center;}
+
+#work-title {margin-bottom: .15em;}
+
+#work-sub {margin-bottom: 1.5em;}
+
+.work-type {
+    margin: 0;
+    margin-left: 140px;
+    margin-bottom: 10px;
+    font-size: var(--fs-h3); 
+    font-weight: var(--fw-bold);
+}
+
+.work-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-item {
+    overflow: hidden;
+    height: 12em;
+    width: 16em;
+    margin: 0 5px 5px 0;
+}
+
+.work-img {
+    height: 100%;
+    width: 100%;
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.work-img:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+/* ======================================================== Skills ================================================== */
+#skill {
+    margin-top: -6em;
+}
+
+#skill-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#skill-title {
+    text-align: center;
+    margin-bottom: .15em;
+}
+
+.skill-icon {
+    font-size: 3em;
+    color: var(--clr-silver);
+    margin: 25px 25px 0px 0px;
+    text-decoration: none;
+}
+
+/* ======================================================== Footer ================================================== */
+#contactMe {
+    background-color: var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-title {
+    color: var(--clr-light);
+    font-size: 1.7em;
+    font-family: var(--ff-secondary);
+    margin: 25px 0 10px 0;
+}
+
+.icon-item {
+    font-size: 2em;
+    color: var(--clr-silver);
+    margin: 0px 30px 25px;
+    text-decoration: none;
+}
+
+#email {
+    font-size: 1.5em;
+    color: var(--clr-light);
+    margin: 0px 30px 25px;
+}
+
+#email:hover {
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+
+.icon-item:hover {
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+
+/* ================================================== Media Screens ================================================================= */
+
+@media screen and (max-width:1400px){
+    .project-links {
+        padding-top: 2.3em;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .project-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 3.6em;
+    }
+
+    .project-url {
+        font-style: var(--ff-primary);
+        font-size: var(--fs-h2);
+        margin-top: 10px;
+    }
+
+    #contactMe {
+        width: 105%;
+    }
+
+    .project-item {
+        width: 29em;
+        height: 18.5em;
+    }
+
+    #project-sub {
+        margin: 0px 9em 1em 0;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .salesforce-badge {
+        width: 150px;
+        position: absolute;
+        margin-bottom: 200px;
+        rotate: 17deg;
+    }
+    
+    .intro-info {
+        padding-left: 1.5em;
+        padding-bottom: 6em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        bottom: 4.6em;
+        left: 2.2em;
+        height: 2em;
+        text-align: right;
+        font-size: 35px;
+    }
+
+    #about-me-section {
+        padding: 2em 3em;
+    }
+
+    .work-type {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1070px){
+
+    .project-main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+     .project-left {
+        width: 105%;
+        padding-bottom: 2.5em;
+    }
+
+    .project-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 4em;
+    }
+
+    .project-url {
+        font-style: var(--ff-primary);
+        font-size: var(--fs-h2);
+        margin-top: 20px;
+    }
+
+    #contactMe {
+        width: 105%;
+    }
+
+    .project-right {
+        padding-top: 10em;
+    }
+
+    .project-item {
+        width: 54em;
+        height: 36.5em;
+    }
+
+    .work-item {
+        height: 9em;
+        width: 10em;
+    }
+
+    .work-type {
+        margin-left: 135px;
+    }
+}
+
+@media screen and (max-width:1041px){
+    #about-me-sub {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width:991px){
+    .salesforce-badge {
+        width: 120px;
+        position: absolute;
+        margin-bottom: 200px;
+        rotate: 17deg;
+    }
+
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 2em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 25.5em;
+        bottom: 8.75em;
+        left: 1em;
+        height: 2em;
+        text-align: right;
+        font-size: 24px;
+    }
+
+    #about-me-section {
+        padding: 2em 0;
+    }
+
+    .project-item {
+        width: 22em;
+        height: 14.5em;
+    }
+
+    .project-url {
+        font-style: var(--ff-primary);
+        font-size: var(--fs-h2);
+        margin-top: 30px;
+    }
+
+    .work-type {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .salesforce-badge {
+        margin-left: 78%;
+    }
+
+    #about-me-sub {
+        font-size: 1em;
+    }
+
+    .project-item {
+        width: 35em;
+        height: 23.5em;
+    }
+
+    .project-left {
+        width: 105%;
+    }
+
+    #project-title {
+        text-align: center;
+    }
+
+    #project-sub {
+        margin: 0px 0em 0em 0em;
+        font-size: 1em;
+    }
+
+    .para-project {
+        margin: 12px 1% 4px 1%;
+    }
+
+    .project-links {
+        padding-top: 1em;
+    }
+}
+
+@media screen and (max-width:767.5px){
+    .salesforce-badge {
+        width: 120px;
+        position: absolute;
+        margin-bottom: 0px;
+        rotate: 12deg;
+        margin-left: 80%;
+    }
+
+    #intro {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-info {
+        padding-bottom: 3em;
+    }
+
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 21.7em;
+        bottom: 27.4em;
+        left: 4.75em;
+        height: 2em;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #about-me-sub {
+        margin: 0px 0em 0em 0;
+        height: 2.5em;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 1em;
+    }
+    .para-about {
+        margin: 12px 5% 4px 6%;
+    }
+
+    .work-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-item {
+        height: 16em;
+        width: 24em;
+    }
+
+    .work-type {
+        margin-left: 0px;
+        text-align: center;
+        /* font-size: medium; */
+    }
+
+    .para-subtitle {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .salesforce-badge {
+        width: 75px;
+        margin-bottom: 425px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+
+    #para-subtitle-intro {
+        position: absolute;
+        width: 21.7em;
+        bottom: 27.3em;
+        left: 5.75em;
+        height: 2em;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .para-about {
+        margin: 12px 7% 4px 8%;
+    }
+
+    .skill-icon {
+        font-size: 2em;
+        margin: 25px 20px 0px 0px;
+    }
+
+    /* .work-type {
+        font-size: 12px;
+    } */
+}
+
+@media screen and (max-width:565px){
+    #para-subtitle-intro {
+        left: 5.4em;
+    }
+    .project-item {
+        width: 29em;
+        height: 19.5em;
+    }
+}
+
+@media screen and (max-width:545px){
+    #para-subtitle-intro {
+        left: 4.7em;
+    }
+
+    .para-about {
+        margin: 12px 5% 4px 8%;
+    }
+}
+
+@media screen and (max-width:520.5px){
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 2em;
+        text-align: center;
+        margin-right: .5em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 19em;
+        bottom: 27.3em;
+        left: 4em;
+        height: 2em;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .para-about {
+        margin: 12px 5% 4px 7%;
+    }
+}
+
+@media screen and (max-width:465px){
+    #para-subtitle-intro {
+        left: 2.5em;
+    }
+    .project-item {
+        width: 25em;
+        height: 16.5em;
+    }
+}
+
+@media screen and (max-width:420px){
+    #para-subtitle-intro {
+        left: 1.5em;
+    }
+    .para-about {
+        margin: 12px 3% 4px 3%;
+    }
+
+    .project-right {
+        padding-top: 6em;
+    }
+
+    .skill-icon {
+        margin: 25px 10px 0px 0px;
+    }
+
+    #project-sub {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:393px){
+    #para-subtitle-intro {
+        position: absolute;
+        width: 20em;
+        bottom: 29em;
+        left: 1.5em;
+        height: 2em;
+        text-align: center;
+        font-size: 17px;
+    }
+    .project-item {
+        width: 21em;
+        height: 14.5em;
+    }
+} 
+
+@media screen and (max-width:376px){
+    .salesforce-badge {
+        width: 50px;
+        margin-bottom: 360px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 1.4em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+    #para-subtitle-intro {
+        left: 1.2em;
+        bottom: 26em;
+    }
+
+    #about-me-sub {
+        margin: 0px -1em 0em -1em;
+    }
+
+    .para-about {
+        margin: 12px 0% 4px 0%;
+    }
+
+    .work-item {
+        width: 22em;
+    }
+
+    section {
+        padding: 2em 2em;
+    }
+
+    .project-right {
+        padding-top: 6em;
+    }
+
+    #skill {
+        margin-top: -2em;
+    }
+}  
+
+@media screen and (max-width:361px){
+    .section-title {
+        margin-bottom: .25em;
+        font-size: 1.2em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+    
+    #para-subtitle-intro {
+        position: absolute;
+        width: 18.5em;
+        bottom: 26em;
+        left: 1.25em;
+        height: 2em;
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    .para-about {
+        margin: 12px -3% 4px -3%;
+    }
+
+    .work-item {
+        width: 20em;
+        height: 15em;
+    }
+
+    .icon-item {
+        font-size: 1em;
+    }
+
+    /* .work-type {
+        font-size: 10px;
+    } */
+    
+}
+
+@media screen and (max-width:350px){
+    #para-subtitle-intro {
+        left: 1em;
+    }
+
+    #about-me-sub {
+        font-size: .8em;
+    }
+
+    .para-about {
+        margin: 12px -3% 4px -1%;
+    }
+
+    .project-item {
+        width: 16em;
+        height: 11.5em;
+    }
+
+    .project-url {
+        font-size: 1.5em;
+    }
+
+    /* #project-sub {
+        font-size: 1.3em;
+    } */
+}
+
+@media screen and (max-width:320px){
+    #para-subtitle-intro {
+        left: .15em;
+    }
+
+    .para-subtitle {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:300px){
+    .salesforce-badge {
+        width: 30px;
+        margin-bottom: 365px;
+        rotate: 0deg;
+        margin-left: 75%;
+    }
+
+    #about-me-sub {
+        font-size: .7em;
+    }
+
+    #para-subtitle-intro {
+        left: -.85em;
+    }
+
+    #today-date {
+        margin-left: 0.2em;
+    }
+
+    .nav-toggle {
+        right: 0em;
+    }
+    .work-item {
+        width: 17em;
+        height: 12em;
+    }
+
+    .icon-item {
+        margin: 0px 21px 22px;
+    }
+
+    /* #project-sub {
+        font-size: 1em;
+    } */
+
+    #email {
+        font-size: 1em;
+    }
+
+    .skill-icon {
+        margin: 25px 4px 0px 0px;
+    }
+}
